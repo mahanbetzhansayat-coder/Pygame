@@ -6,7 +6,7 @@ pygame.init()
 
 w, h = 800, 600 # размеры
 screen = pygame.display.set_mode((w, h))
-pygame.display.set_caption("lab3_paint_FINAL_v2_real") # типичное название
+pygame.display.set_caption("lab10_paint") 
 clk = pygame.time.Clock()
 fnt = pygame.font.SysFont("Verdana", 16) # пойдет любой шрифт
 
@@ -18,8 +18,8 @@ cc = (0, 0, 0) # current color
 tool = "brush" # brush, eraser, rect, circle
 size = 5
 
-flag = False # рисуем или нет
-x1, y1 = 0, 0 # начальные координаты
+flag = False 
+x1, y1 = 0, 0 
 
 
 colors_gui = [
@@ -66,12 +66,12 @@ while 1:
         elif e.type == pygame.MOUSEBUTTONDOWN:
             if e.button == 1: 
                 mx, my = e.pos
-                if my < 50: # клик в меню
+                if my < 50: 
                     for r, c in colors_gui:
                         if r.collidepoint(e.pos):
                             cc = c
                             if tool == "eraser": 
-                                tool = "brush" # костыль, чтобы переключалось обратно при выборе цвета
+                                tool = "brush" #чтобы переключалось обратно при выборе цвета
                                 
                     for r, t in tools_gui:
                         if r.collidepoint(e.pos):
@@ -91,7 +91,7 @@ while 1:
                     pygame.draw.rect(surf, cc, (x1, y1, rw, rh), size)
                 
                 elif tool == "circle":
-                    # формула расстояния между точками вместо math.hypot
+                    # формула расстояния между точками 
                     rad = int(((x2 - x1)**2 + (y2 - y1)**2)**0.5) 
                     pygame.draw.circle(surf, cc, (x1, y1), rad, size)
 

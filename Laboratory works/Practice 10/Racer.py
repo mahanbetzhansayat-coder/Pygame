@@ -5,7 +5,7 @@ pygame.init()
 
 #400x600
 screen = pygame.display.set_mode((400, 600))
-pygame.display.set_caption("lab4_game_v3_final")
+pygame.display.set_caption("lab10_1")
 clk = pygame.time.Clock()
 
 f1 = pygame.font.SysFont("Verdana", 20)

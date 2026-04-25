@@ -7,7 +7,7 @@ w = 30
 h = 20
 
 screen = pygame.display.set_mode((w * cs, h * cs))
-pygame.display.set_caption("lab5_zmeika_final_v2")
+pygame.display.set_caption("lab10")
 clk = pygame.time.Clock()
 fnt = pygame.font.SysFont("Verdana", 16)
 
