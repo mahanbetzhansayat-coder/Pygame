@@ -1,5 +1,3 @@
-name,phone,email,birthday,group,type
-Alice,87011234567,alice@mail.com,2005-04-27,Friend,mobile
-Bob,87771234567,bob@mail.com,2004-12-10,Work,mobile
-Charlie,87051234567,charlie@mail.com,2003-06-15,Family,home
-Diana,87471234567,diana@mail.com,2005-09-01,Other,work
+name,email,phone,type,birthday,group
+Alice Smith,alice@gmail.com,123456789,mobile,1995-05-12,Friend
+Bob Jones,bob@work.com,987654321,work,1988-11-20,Work
