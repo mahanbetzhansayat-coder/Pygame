@@ -21,8 +21,23 @@
     },
     {
         "name": "Player",
+        "score": 248,
+        "distance": 2482
+    },
+    {
+        "name": "Player",
         "score": 218,
         "distance": 2180
+    },
+    {
+        "name": "Player",
+        "score": 171,
+        "distance": 1718
+    },
+    {
+        "name": "Player",
+        "score": 153,
+        "distance": 1534
     },
     {
         "name": "Player",
@@ -33,20 +48,5 @@
         "name": "Player",
         "score": 62,
         "distance": 626
-    },
-    {
-        "name": "Player",
-        "score": 45,
-        "distance": 452
-    },
-    {
-        "name": "Player",
-        "score": 44,
-        "distance": 442
-    },
-    {
-        "name": "Player",
-        "score": 22,
-        "distance": 224
     }
 ]
