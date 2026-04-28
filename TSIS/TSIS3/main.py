@@ -11,8 +11,9 @@ clock = pygame.time.Clock()
 
 def menu_screen():
     btn_play = Button(100, 200, 200, 50, "Play")
-    btn_leader = Button(100, 270, 200, 50, "Leaderboard")
     btn_quit = Button(100, 340, 200, 50, "Quit")
+    btn_leader = Button(100, 270, 200, 50, "Leaderboard")
+   
 
     while True:
         screen.fill((255, 255, 255))
