@@ -7,7 +7,7 @@ class SnakeGame:
         self.username = username
         self.pb = pb
         
-        # Твои стартовые данные
+        #стартовые данные
         self.zmeika = [[15, 10], [14, 10]]
         self.dx, self.dy = 1, 0 
         self.ndx, self.ndy = 1, 0 
@@ -67,7 +67,7 @@ class SnakeGame:
     def update(self):
         if self.game_over: return
 
-        # Твоя логика управления
+        # логика управления
         self.dx, self.dy = self.ndx, self.ndy
         nx, ny = self.zmeika[0][0] + self.dx, self.zmeika[0][1] + self.dy
 
@@ -80,7 +80,7 @@ class SnakeGame:
 
         if hit_wall or hit_self or hit_obs:
             if self.shield_active:
-                self.shield_active = False # Щит спас
+                self.shield_active = False 
                 return 
             else:
                 self.game_over = True
@@ -89,7 +89,7 @@ class SnakeGame:
         self.zmeika.insert(0, [nx, ny])
         ate_something = False
 
-        # Твой таймер еды
+        #таймер еды
         self.eda[3] -= 1
         if self.eda[3] <= 0:
             self.eda = self.make_eda() 
@@ -142,7 +142,7 @@ class SnakeGame:
             self.active_powerup = None
 
     def get_speed(self):
-        base = 8 + (self.lvl * 2) # Твоя формула скорости
+        base = 8 + (self.lvl * 2) #формула скорости
         if self.active_powerup == "speed": return base + 8
         if self.active_powerup == "slow": return max(4, base - 6)
         return base
@@ -154,7 +154,7 @@ class SnakeGame:
             for x in range(0, W * CS, CS): pygame.draw.line(screen, (30, 30, 30), (x, 0), (x, H * CS))
             for y in range(0, H * CS, CS): pygame.draw.line(screen, (30, 30, 30), (0, y), (W * CS, y))
 
-        # Отрисовка еды (твой код)
+        # Отрисовка еды 
         eda_color = (255, 0, 0) if self.eda[2] == 1 else (0, 150, 255)
         pygame.draw.rect(screen, eda_color, (self.eda[0] * CS, self.eda[1] * CS, CS, CS))
         if self.eda[3] < 20 and self.eda[3] % 2 == 0:

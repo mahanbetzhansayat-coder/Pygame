@@ -116,7 +116,7 @@ def run_game_loop(username):
         for e in pygame.event.get():
             if e.type == pygame.QUIT: sys.exit()
             if e.type == pygame.KEYDOWN:
-                # Твоя логика управления
+                #логика управления
                 if e.key == pygame.K_UP and game.dy != 1: game.ndx, game.ndy = 0, -1
                 elif e.key == pygame.K_DOWN and game.dy != -1: game.ndx, game.ndy = 0, 1
                 elif e.key == pygame.K_LEFT and game.dx != 1: game.ndx, game.ndy = -1, 0

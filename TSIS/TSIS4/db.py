@@ -1,9 +1,9 @@
 import psycopg2
 
 DB_CONFIG = {
-    "dbname": "postgres", # поменяй на имя своей БД
-    "user": "postgres",   # твой юзер
-    "password": "123456789",    # твой пароль
+    "dbname": "postgres", 
+    "user": "postgres",   
+    "password": "123456789",   
     "host": "localhost",
     "port": "5432"
 }

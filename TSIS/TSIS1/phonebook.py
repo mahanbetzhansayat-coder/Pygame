@@ -113,7 +113,7 @@ def import_csv(filename="contacts.csv"):
         conn.close()
 
 
-# --- 3.2 Advanced Console Search & Filter ---
+
 
 def view_contacts_paginated():
     print("\n--- Sort & Filter Options ---")
@@ -161,7 +161,7 @@ def search_console():
         print(f"Match: {r[0]} | {r[1]} | Phone: {r[2]} ({r[3]})")
 
 
-# --- 3.4 Procedures ---
+
 
 def add_phone_procedure():
     name = input("Contact name: ")
@@ -177,7 +177,6 @@ def move_group_procedure():
     print("Group updated.")
 
 
-# --- Main Menu ---
 
 def main():
     while True:

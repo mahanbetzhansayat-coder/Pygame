@@ -4,7 +4,7 @@ import os
 SETTINGS_FILE = 'settings.json'
 
 DEFAULT_SETTINGS = {
-    "snake_color": (0, 255, 0), # твой дефолтный зеленый
+    "snake_color": (0, 255, 0), # зеленый
     "grid_overlay": False,
     "sound": True
 }
@@ -22,7 +22,7 @@ def save_settings(settings):
     with open(SETTINGS_FILE, 'w') as f:
         json.dump(settings, f, indent=4)
 
-# Твои переменные из старого кода
+
 CS = 20 
 W, H = 30, 20
 WIDTH, HEIGHT = W * CS, H * CS # 600 x 400

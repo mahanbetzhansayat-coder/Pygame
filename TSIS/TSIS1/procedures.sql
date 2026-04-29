@@ -1,4 +1,4 @@
--- 1. Добавление телефона
+
 CREATE OR REPLACE PROCEDURE add_phone(p_contact_name VARCHAR, p_phone VARCHAR, p_type VARCHAR)
 LANGUAGE plpgsql AS $$
 DECLARE
@@ -12,7 +12,7 @@ BEGIN
 END;
 $$;
 
--- 2. Перенос в группу (с автосозданием группы)
+
 CREATE OR REPLACE PROCEDURE move_to_group(p_contact_name VARCHAR, p_group_name VARCHAR)
 LANGUAGE plpgsql AS $$
 DECLARE
@@ -24,7 +24,7 @@ BEGIN
 END;
 $$;
 
--- 3. Поиск по всем полям (name, email, phone)
+
 CREATE OR REPLACE FUNCTION search_contacts(p_query TEXT)
 RETURNS TABLE (c_name VARCHAR, c_email VARCHAR, p_phone VARCHAR, p_type VARCHAR) AS $$
 BEGIN

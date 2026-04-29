@@ -97,8 +97,6 @@ def run_game(screen, clock):
         for e in pygame.event.get():
             if e.type == pygame.QUIT:
                 return "QUIT", score, distance
-
-        # --- ВОТ ЗДЕСЬ ТЕПЕРЬ РЕАЛИЗОВАНО УВЕЛИЧЕНИЕ ПЛОТНОСТИ ТРАФИКА ---
         # Изначально шанс спавна врага 1 к 60. Каждые 100 дистанции этот шанс увеличивается,
         # пока не достигнет максимума (1 к 15).
         enemy_spawn_chance = max(15, 60 - (distance // 100))
